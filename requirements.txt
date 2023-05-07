@@ -1,0 +1,8 @@
+dash
+diskcache
+dash[diskcache]
+dash-mantine-components
+gunicorn
+requests
+addict
+psutil
