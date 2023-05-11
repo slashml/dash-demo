@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: dash-demo-summarization
+    env: python
+    repo: https://github.com/slashml/dash-demo
+    region: oregon
+    plan: free
+    branch: main
+    numInstances: 1
+    buildCommand: ./deploy.sh
+    startCommand: gunicorn examples.summarization.app:server
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.13
