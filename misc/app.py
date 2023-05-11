@@ -2,8 +2,6 @@ from dash import Dash, html, dcc
 import dash_mantine_components as dmc
 import dash
 
-external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
-
 
 app = Dash(__name__, use_pages=True)
 
